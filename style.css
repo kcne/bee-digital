@@ -536,7 +536,7 @@ svg{
 }
 
 .portofolio{
-  height:80vh;
+  height:35rem;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -544,7 +544,7 @@ svg{
 }
 
 .p-container{
-  height:30rem;
+  height:27rem;
   width:1140px;
   background-color: hsla(var(--hue),100%,9%,0.1 );
   border-radius: 25px;
@@ -560,7 +560,7 @@ svg{
 .text-cont{
   align-self:flex-start;
   width:100%;
-  padding:4rem 2rem;
+  padding:2rem 2rem;
 }
 .text-cont p{
   margin-top:1rem;
