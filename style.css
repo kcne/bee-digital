@@ -289,7 +289,8 @@ h1.header{
   background-color: var(--light-color);
 }
 .process{
-  background-color: var(--light-color);
+  /* background-color: var(--light-color); */
+  background:var(--bg-gradient); 
   height:400px;
   width:100%;
   display: flex;
@@ -319,13 +320,25 @@ svg{
   margin-top:1rem;
   height:30px;
 }
+.flow{
+  background:hsl(0 0% 0% / 0.2);
+}
 /* Projects section */
 .team{
-
+  /* width: 1140px;
+  margin:auto; */
+  padding-bottom: 4rem;
+  /* margin-bottom: 2rem;; */
+  
+  width:100%;
   color:var(--dark-color); 
   display:flex;
   justify-content: center;
   align-items: center;
+  /* border-radius:20px; */
+}
+.team ul{
+  margin:0;
 }
 .team-content{
   width:75%;
@@ -367,7 +380,7 @@ svg{
 .flow{
   width:100%;
   max-width: 100%;
-  background:var(--bg-gradient);
+  /* background:var(--bg-gradient); */
 }
 .light{
   color:var(--light-color);
@@ -451,11 +464,11 @@ svg{
 }
 
 .profile::after {
-  background: linear-gradient(
+  /* background: linear-gradient(
     45deg,
     hsl(5 97% 63% / 0.7) 0,
     hsl(5 97% 63% / 0) 100%
-  );
+  ); */
   opacity: 0;
   transition: 300ms opacity linear;
 }
@@ -544,7 +557,7 @@ svg{
 }
 
 .p-container{
-  height:27rem;
+  height:28rem;
   width:1140px;
   background-color: hsla(var(--hue),100%,9%,0.1 );
   border-radius: 25px;
@@ -580,6 +593,9 @@ svg{
 }
 .contact{
   height:35rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 input{
   display:block;
@@ -624,7 +640,7 @@ input[type="file"]{
   margin-bottom:3rem;
 }
 .footer{
-  height: 25rem;
+  height: 23rem;
   background:hsl(0 0% 0% / 0.791);
   /* background:linear-gradient(
     to bottom,
@@ -649,4 +665,57 @@ input[type="file"]{
 }
 .f-services ul li{
   margin-top:0.3rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: "Roboto", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+
+.p-flex{
+  display:flex;
+  gap:2rem;
+}
+.p-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:360px;
+  gap:15px;
+}
+.p-grid li{
+  list-style: none;
+  border-radius:20px;
+}
+.p-grid li a{
+  border-radius:10px;
+}
+.p-grid li a p{
+  font-size:15px;
+}
+.light-over{
+  border-color:var(--light-color);
+  color:var(--light-color);
+}
+.pb-1{
+  padding-bottom:1rem;
+}
+.project img{
+  filter: grayscale(0.6);
+}
+.a-left:hover,.a-right:hover{
+  cursor:pointer;
 }
